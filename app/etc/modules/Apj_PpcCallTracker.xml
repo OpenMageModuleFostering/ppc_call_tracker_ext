@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Apj_PpcCallTracker>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Apj_PpcCallTracker>
+    </modules>
+</config>

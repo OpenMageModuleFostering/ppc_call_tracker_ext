@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<config>
+	<sections>
+		<ppccalltracker_options translate="label" module="ppccalltracker">
+			<label>Pay Per Click (PPC) Call Tracker</label>
+			<tab>general</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>2000</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>		
+		<groups>
+			<tabgeneral translate="label" module="ppccalltracker">
+                    <label>Pay Per Click (PPC) Call Tracker Configuration</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+					<expanded>1</expanded>
+                    <comment><![CDATA[
+					 <div class="ppc-call-tracker_container">
+<div style="width:80%">    
+<h3 style="margin-bottom:0px; padding-top:0px;">Pay Per Click (PPC) Call Tracker</h3>
+<p>This Free PPC Call Tracker Extension enables businesses - to see how many phone calls your campaigns are generating. Simple to use and quick to set-up, it will provide you with new analytic abilities to improve your online campaign planning.</p>
+<h3 style="margin-bottom:0px; padding-top:0px;">How Does It Work?</h3>
+<p>We provide the extension for free, and once installed, just add and (an) additional phone lines set-up, the specified unique customer-facing number will be generated based on their online journey to your site. These calls are then can then be taken on this dedicated number for that campaign or re-routed to your usual main point of contact number so you can track the volume and quality of call’s coming from Google AdWords, Yahoo and Bing.</p>
+<h3 style="margin-bottom:0px; padding-top:0px;">PPC Call Tracker Configuration:</h3>
+</div>
+      
+<div style="width:80%">    
+<p><strong>1.	Insert you’re your default telephone number and PPC telephone numbers below: </strong></p>
+
+</div>
+</div>
+					]]></comment>			
+					<fields>
+                        <regularphone translate="label">
+                            <label>Default Phone Number:</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </regularphone>
+                        <googlephone translate="label">
+                            <label>Google Adwords Phone Number:</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </googlephone>						
+                        <msnphone translate="label">
+                            <label>Bing Adwords Phone Number:</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>12</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </msnphone>	
+                        <yahoophone translate="label">
+                            <label>Yahoo Adwords Phone Number:</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>13</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </yahoophone>
+                        <cookiesec translate="label">
+                            <label>Cookie Seconds:</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>14</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </cookiesec>
+						<cookietime translate="label">
+							<label>Choose Date:</label>
+							<frontend_type>radios</frontend_type>
+							<source_model>ppc/source_cookietime</source_model>
+                            <sort_order>15</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>						
+							<comment>Please choose when the number of seconds should be counted from.</comment>
+						</cookietime>						
+																							
+					</fields>
+					
+			</tabgeneral>
+			<tabprivacy translate="label" module="ppccalltracker">
+			<label>Privacy Policy</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>21</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+					<expanded>1</expanded>
+                    <comment><![CDATA[
+					<p><strong>2. Update the code on your site with either the short code in your pages or static blocks. Or edit ppccalltracker.xml</strong></p>
+					<p><code>{{block type="ppccalltracker/ppc" name="ppccalltracker" template="apj/ppccalltracker/ppccalltracker.phtml" before="-"}}</code></p>
+					<p><strong>3. Update your privacy policy - We recommend users of this extension add the following copy and paste the following code to the terms of use page:</strong></p>
+<h3 style="margin-bottom:0px; padding-top:0px;">Call Tracking and Recording:</h3>
+   <p>Solar Communications provides a free call tracking software called Pay Per Click Call Tracker that we have installed on this site. Pay Per Click Call Tracker uses cookies and we may collect statistical information about calls that helps us determine if calls originated from marketing.</p>
+<p><a href="http://www.solar.co.uk/privacy-policy/" style="color:red;"><strong>Click here for information on how to reject or delete this cookie.</strong></a></p>
+					<h3 style="margin-bottom:0px; padding-top:0px;">Notes:</h3>
+<p style="line-height:20px;">Google AdWords Auto Tagging needs to be enabled in order to track ad referrals properly. Otherwise those will be handled as organic Google referrals.<br />By default auto-tagging is enabled for Google AdWords. To double check that you need to go to My Account » Preferences and check the value for the "Tracking" option.</p>
+					]]></comment>
+			</tabprivacy>
+		</groups>
+		</ppccalltracker_options>			
+	</sections>
+</config>
+	

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>ppc_call_tracker_ext</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.apache.org/licenses/LICENSE-2.0">Apache</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Pay Per Click (PPC) Call Tracker</summary>
+    <description>Pay Per Click (PPC) Call Tracker Extension enables businesses - to see how many phone calls your campaigns are generating. Simple to use and quick to set-up, it will provide you with new analytic abilities to improve your online campaign planning.</description>
+    <notes>After create first version read to use.</notes>
+    <authors><author><name>Andrew Jackson Solar Communications</name><user>solarcomms</user><email>apj@solar.co.uk</email></author></authors>
+    <date>2013-10-02</date>
+    <time>09:06:34</time>
+    <contents><target name="magelocal"><dir name="Apj"><dir name="PpcCallTracker"><dir name="Block"><file name="Ppc.php" hash="b496eb066043afa6150de114f80acd92"/></dir><dir name="Helper"><file name="Data.php" hash="935550a48661f2704d0f710b1a49992d"/></dir><dir name="Model"><file name="Observer.php" hash="e33095fe97818764d681fab905c50ebe"/><dir name="Source"><file name="Cookietime.php" hash="a8eef847e953d82d23cb52ae61662c76"/></dir></dir><dir name="controllers"><file name="IndexController.php" hash="dd21070fb5ba8eeb6778d9d689b3b4e1"/></dir><dir name="etc"><file name="config.xml" hash="47531b2bf7694bff847e0bbb659d7c8a"/><file name="system.xml" hash="28ccf2899a49d2d836950de122376f16"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="ppccalltracker.xml" hash="4dff74bcb82bd5cf2a863dee63e1f917"/></dir><dir name="template"><dir name="apj"><dir name="ppccalltracker"><file name="ppccalltracker.phtml" hash="61e8bbcb9bcf09905663f4e8a7fe81f5"/></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Apj_PpcCallTracker.xml" hash="60ef9648749744a444ec765079fb0fc1"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
